@@ -1,0 +1,20 @@
+{
+  "name": "omni-intel-graphrag",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/core/server.ts",
+    "start": "bun src/core/server.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "ingest:repo": "bun src/cli/ingest-repository.ts"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.19.0",
+    "typescript": "5.9.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3"
+  }
+}
